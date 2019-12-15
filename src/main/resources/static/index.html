@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webchat WebSocket</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+  
+    <div id="main-content" class="container">
+      <div class="row text-center">
+        <h2>WebChat WebSocket</h2>
+      </div>
+
+      <br/>
+
+      <div class="row text-center">
+        <div class="col-md-4">
+          <label for="webchat_username">Username:</label>
+          <input type="text" id="webchat_username" placeholder="Put your username here..."/>
+        </div>
+        <div class="col-md-1">
+          <input type="button" class="btn" id="webchat_connect" value="Connect"/>
+        </div>
+        <div class="col-md-1">
+          <input type="button" class="btn" id="webchat_disconnect" value="Disconnect" disabled = true/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row text-center"><h2>Connected Users List</h2></div>
+        <div id="chat_user_list" class="row"></div>
+      </div>
+    
+      <div id="chat_list" class="row"></div>
+      
+      <div id="alerts"></div>
+    </div>
+    
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
