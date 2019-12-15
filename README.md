@@ -1,6 +1,7 @@
 # spring_websocket_webchat
 
-> English 
+> English
+
 A webchat made using Spring websocket framework
 
 This code was made for a tutorial in my blog, so if you want a detailed explanation please visit this [post](https://kiberstender.github.io/miscelaneous-spring-websocket-stomp-specific-user/)
